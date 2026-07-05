@@ -2,18 +2,22 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaGoogle, FaEnvelope, FaLock, FaUser, FaSpinner, FaExclamationCircle, FaCheckCircle } from 'react-icons/fa';
 import { BiMoviePlay } from 'react-icons/bi';
-import { auth, googleProvider, db } from '../firebase';
-import { 
-  createUserWithEmailAndPassword, 
-  signInWithEmailAndPassword, 
+import {
+  auth,
+  googleProvider,
+  db,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   signInWithPopup,
   fetchSignInMethodsForEmail,
   linkWithCredential,
   EmailAuthProvider,
   sendPasswordResetEmail,
-  updateProfile 
-} from 'firebase/auth';
-import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
+  updateProfile,
+  doc,
+  setDoc,
+  serverTimestamp,
+} from '../firebase';
 
 const FIREBASE_ERRORS = {
   'auth/invalid-email':               'That email address doesn\'t look right.',

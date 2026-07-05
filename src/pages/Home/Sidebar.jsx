@@ -9,8 +9,7 @@ import {
 } from 'react-icons/bi';
 import { FaPlay, FaSignOutAlt, FaUserCircle } from 'react-icons/fa';
 import { GENRES, SPECIAL_CATEGORIES } from './tmdb';
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth, onAuthStateChanged, signOut } from "../../firebase";
 
 const NAV_ITEMS = [
   { id: 'search', icon: BiSearch, action: 'navigate', label: 'Search' },

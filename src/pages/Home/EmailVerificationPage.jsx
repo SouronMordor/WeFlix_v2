@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { applyActionCode } from 'firebase/auth';
-import { doc, setDoc } from 'firebase/firestore';
-import { auth, db } from '../../firebase';
+import { auth, db, applyActionCode, doc, setDoc } from '../../firebase';
 import { FaSpinner, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import { BiMoviePlay } from 'react-icons/bi';
 import SEO from './SEO';

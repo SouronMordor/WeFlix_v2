@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { BiChevronLeft, BiChevronRight, BiTime } from 'react-icons/bi';
-import { collection, query, orderBy, limit, onSnapshot } from 'firebase/firestore';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth, db } from '../../firebase';
+import { auth, db, collection, query, orderBy, limit, onSnapshot, onAuthStateChanged } from '../../firebase';
 import ContentCard from './ContentCard';
 
 const POSTER = 'https://image.tmdb.org/t/p/w500';

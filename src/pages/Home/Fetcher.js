@@ -1,5 +1,5 @@
-const API_KEY = import.meta.env.VITE_TMDB_API;
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_KEY = import.meta.env.VITE_TMDB_API || '';
+const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://api.themoviedb.org/3';
 
 /**
  * Fetch content by genre — or by custom override params for special categories

@@ -14,8 +14,8 @@ import { buildBrowsePath } from './urlFilters';
 import SEO from './SEO';
 
 const CONFIG = {
-  API_KEY: import.meta.env.VITE_TMDB_API,
-  BASE_URL: import.meta.env.VITE_BASE_URL,
+  API_KEY: import.meta.env.VITE_TMDB_API || '',
+  BASE_URL: import.meta.env.VITE_BASE_URL || 'https://api.themoviedb.org/3',
   IMAGE_BASE_URL: 'https://image.tmdb.org/t/p/w500',
   DEBOUNCE_DELAY: 350,
 };

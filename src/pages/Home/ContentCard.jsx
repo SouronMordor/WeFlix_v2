@@ -123,7 +123,7 @@ const ContentCard = memo(({
   useEffect(() => {
     if (showTrailer && !trailerKey && !trailerError) {
       let cancelled = false;
-      const API_KEY = import.meta.env.VITE_TMDB_API;
+      const API_KEY = import.meta.env.VITE_TMDB_API || '';
       fetch(`https://api.themoviedb.org/3/${mediaType}/${mediaId}/videos?api_key=${API_KEY}`)
         .then(res => res.json())
         .then(data => {

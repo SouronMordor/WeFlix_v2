@@ -6,8 +6,8 @@ import { auth, db, collection, query, orderBy, limit, getDocs, onAuthStateChange
 import ContentCard from './ContentCard';
 import { useWatchlist } from '../../context/WatchlistContext';
 
-const API_KEY = import.meta.env.VITE_TMDB_API;
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_KEY = import.meta.env.VITE_TMDB_API || '';
+const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://api.themoviedb.org/3';
 const POSTER = 'https://image.tmdb.org/t/p/w500';
 
 /**

@@ -4,8 +4,8 @@ import { toDetailPath } from './urlUtils';
 import { FaPlay, FaInfoCircle, FaStar } from 'react-icons/fa';
 import { BiCalendar } from 'react-icons/bi';
 
-const API_KEY  = import.meta.env.VITE_TMDB_API;
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_KEY  = import.meta.env.VITE_TMDB_API || '';
+const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://api.themoviedb.org/3';
 const BACKDROP = 'https://image.tmdb.org/t/p/w1280'; // Optimized down from 'original'
 const BACKDROP_THUMB = 'https://image.tmdb.org/t/p/w300';
 const INTERVAL = 7000;

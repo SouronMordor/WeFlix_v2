@@ -3,8 +3,8 @@ import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import { FiArrowRight } from 'react-icons/fi';
 import ContentCard from './ContentCard';
 
-const API_KEY = import.meta.env.VITE_TMDB_API;
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_KEY = import.meta.env.VITE_TMDB_API || '';
+const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://api.themoviedb.org/3';
 const POSTER = 'https://image.tmdb.org/t/p/w500';
 
 /* variant → TMDB endpoint path */

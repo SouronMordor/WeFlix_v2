@@ -33,6 +33,9 @@ jobs:
         env:
           NODE_ENV: production
           GITHUB_REPOSITORY: ${{ github.repository }}
+          VITE_TMDB_API: ${{ secrets.VITE_TMDB_API }}
+          VITE_BASE_URL: ${{ vars.VITE_BASE_URL || 'https://api.themoviedb.org/3' }}
+          VITE_SITE_URL: ${{ vars.VITE_SITE_URL || 'https://souronmordor.github.io/WeFlix_v2/' }}
 
       - name: Add .nojekyll
         run: touch dist/.nojekyll

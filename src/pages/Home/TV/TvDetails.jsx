@@ -20,8 +20,7 @@ import SEO from "../SEO";
 import ContentCard from "../ContentCard";
 import CastRow from "../reused/CastRow";
 import AuthModal from "../../../components/AuthModal";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../../firebase";
+import { auth, onAuthStateChanged } from "../../../firebase";
 import { useWatchlist } from "../../../context/WatchlistContext";
 
 const MemoizedVideoPlayer = memo(VideoPlayer);

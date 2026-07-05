@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
-import { verifyPasswordResetCode, confirmPasswordReset } from 'firebase/auth';
-import { auth } from '../../firebase';
+import { auth, verifyPasswordResetCode, confirmPasswordReset } from '../../firebase';
 import { FaLock, FaSpinner, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import { BiMoviePlay } from 'react-icons/bi';
 import SEO from './SEO';

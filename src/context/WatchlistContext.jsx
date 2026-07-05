@@ -1,7 +1,5 @@
 import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
-import { onAuthStateChanged } from 'firebase/auth';
-import { collection, onSnapshot, doc, setDoc, deleteDoc } from 'firebase/firestore';
-import { auth, db } from '../firebase';
+import { auth, db, onAuthStateChanged, collection, onSnapshot, doc, setDoc, deleteDoc } from '../firebase';
 
 const STORAGE_KEY = (uid) => `wf_watchlist_${uid}`;
 

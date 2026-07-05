@@ -2,9 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import { FiArrowRight } from 'react-icons/fi';
 import { HiSparkles } from 'react-icons/hi';
-import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth, db } from '../../firebase';
+import { auth, db, collection, query, orderBy, limit, getDocs, onAuthStateChanged } from '../../firebase';
 import ContentCard from './ContentCard';
 import { useWatchlist } from '../../context/WatchlistContext';
 

@@ -4,8 +4,7 @@ import { BiUpArrowAlt, BiHomeAlt, BiMoviePlay, BiTv, BiSearch, BiBookmark } from
 import { FaUserCircle, FaSignOutAlt } from 'react-icons/fa';
 import Sidebar from './Sidebar';
 import { buildBrowsePath, getCategoryBySlug } from './urlFilters';
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth, onAuthStateChanged, signOut } from "../../firebase";
 import AuthModal from "../../components/AuthModal";
 
 function ParentComponent() {

@@ -1,5 +1,4 @@
-import { doc, setDoc, deleteDoc, getDocs, collection, query, orderBy, limit } from 'firebase/firestore';
-import { db } from '../firebase';
+import { db, doc, setDoc, deleteDoc, getDocs, collection, query, orderBy, limit } from '../firebase';
 
 // Helper to save current movie/show to user's continue_watching list in Firestore
 export const saveToContinueWatching = async (userUid, item) => {
